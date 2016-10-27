@@ -1,24 +1,15 @@
 # Reusable UI components
 
-![](our-own-kit.jpg)
+![](ololo.jpg)
 
 ## [Demo](http://sber-copy.funtom.ru/)
 
 ## Design guide
 
-### V1
-- [PSD](https://drive.google.com/file/d/0B9FsBG6y6cKtd2VtWGxfeEYxX3M/view?usp=sharing)
-- [PNG](https://drive.google.com/file/d/0B9FsBG6y6cKtSHZCMk5lc2ptOUE/view?usp=sharing)
-
-### V2
-- [PSD](https://drive.google.com/file/d/0B9FsBG6y6cKtVFY5UFBRUGRTSU0/view?usp=sharing)
-- [JPEG](https://drive.google.com/file/d/0B9FsBG6y6cKtV1dpR3hrYWRISFk/view?usp=sharing)
-
 ## How to start
 
 ```zsh
-git clone git@gitlab.at-consulting.ru:front/components.git
-cd components
+
 npm start
 ```
 
@@ -76,15 +67,6 @@ Open `http://localhost:8080/` with corresponding path in browser. For example, `
 5. eslint and csslint
 
 
-## How to contribute
-
-1. create a branch from master/development depending on the task
-2. write, commit, push
-3. **Open Merge Request** to master/development depending on the task
-
->Please pay attention to branch names and commit messages. Actual rules can be found in [CONTRIBUTING.md](https://gitlab.at-consulting.ru/front/ishop/blob/master/CONTRIBUTING.md)
-
-
 ## How to create new component
 
  - create it in `src/<component_name>` directory
@@ -96,23 +78,6 @@ Open `http://localhost:8080/` with corresponding path in browser. For example, `
 
 You need to write css using `postcss-mixins` plugin and apply `media`-decorator from `src/media` to you component.
 Look at `Button` component from `src/button/*` for example.
-
-
-## How to bump version
-
->It is **MAINTAINER**'s responsibility to bump version!!!
-
-Don't forget to install grunt-cli globally
-
-```zsh
-npm i -g grunt-cli
-```
-
-1. Fix: `grunt release:patch`: v0.0.1 => v0.0.2
-2. Feature: `grunt release:minor`: v0.0.2 => v0.1.0
-3. First release candidate: `grunt release:premajor`: v0.1.0 => v1.0.0-rc.0
-3. Next release candidate: `grunt release:prerelease`: v1.0.0-rc.0 => v1.0.0-rc.1
-4. Release: `grunt release:major`: v1.0.0-rc.1 => v1.0.0
 
 
 ## How to use these components in other projects
