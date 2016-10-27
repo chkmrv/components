@@ -1,0 +1,111 @@
+::-ms-clear {
+    width: 0;
+    height: 0;
+}
+
+.kit-input {
+    font-family: Arial;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    transition: all .5s 0s ease-out;
+    width: 100%;
+
+    &__control {
+        font-family: inherit;
+        box-sizing: border-box;
+        font-size: 20px;
+        color: $base;
+        padding: 0px 9px;
+        margin: 0;
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+
+        border-width: 1px;
+        border-style: solid;
+        border-color: #acacac;
+        border-radius: 3px;
+
+        outline: none;
+        background: none;
+        background-color: #fff;
+        text-overflow: ellipsis;
+        -webkit-appearance: none;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+        &:hover {
+            box-shadow: 0px 0px 1px #acacac;
+        }
+
+        &:focus {
+            border-color: #74b65f;
+            color: #000000;
+        }
+
+        &:focus&:hover {
+            box-shadow: 0px 0px 1px #74b65f;
+        }
+
+        &::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+
+        &::-webkit-search-cancel-button {
+            display: none;
+        }
+
+        &::-webkit-input-placeholder {
+            text-indent: 0;
+        }
+
+        &::-moz-placeholder {
+            opacity: 1;
+        }
+
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+    }
+
+    &__addon-text {
+        position: absolute;
+        font-size: 17px;
+        bottom: 0;
+        top: 0;
+        right: 10px;
+        line-height: 45px;
+        vertical-align: middle;
+        text-align: right;
+        color: #4c4c4c;
+        user-select: none;
+        opacity: 0.5;
+    }
+
+    &_error &__control {
+        border-color: #cf1e1e;
+    }
+
+    &_error &__control:hover {
+        box-shadow: 0px 0px 1px #cf1e1e;
+    }
+
+    &_error &__control:hover&__control:focus {
+        box-shadow: 0px 0px 1px #ff0000;
+    }
+
+    &_error &__control:focus {
+        border-color: #ff0000;
+    }
+
+    &_disabled &__control {
+        background-color: #efefef;
+        color: #cecece;
+        border: none;
+    }
+
+    &_disabled &__control:hover,
+    &_disabled &__control:hover&__control:focus {
+        box-shadow: none;
+    }
+}

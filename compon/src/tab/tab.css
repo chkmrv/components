@@ -1,0 +1,79 @@
+.kit-tab {
+    font-family: SeroPro;
+    display: inline-block;
+    cursor: pointer;
+
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 40px;
+
+    text-decoration: none;
+
+    border-color: rgba(255, 255, 255, 0);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+
+    &:hover {
+        opacity: .8;
+    }
+
+    &__text {
+        display: inline-block;
+        border-bottom-width: 1px;
+        border-bottom-style: dashed;
+    }
+
+    &_selected {
+        border-color: #ffc020;
+        cursor: default;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &_selected &__text {
+        border-bottom: none;
+    }
+
+    &_color_white {
+        color: $clean;
+    }
+
+    &_color_white &__text {
+        border-bottom-color: $clean;
+    }
+
+    &_color_black {
+        color: $base;
+    }
+
+    &_color_black &__text {
+        border-bottom-color: $base;
+    }
+
+    &_size_medium {
+        box-sizing: border-box;
+        height: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    &_size_medium &__text {
+        font-size: 16px;
+        line-height: 14px;
+    }
+
+    &_size_large {
+        box-sizing: border-box;
+        height: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    &_size_large &__text {
+        font-size: 20px;
+        line-height: 18px;
+    }
+}

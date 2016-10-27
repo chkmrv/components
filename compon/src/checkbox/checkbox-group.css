@@ -1,0 +1,49 @@
+.kit-checkbox-group {
+    font-family: Arial;
+    display: inline-block;
+    position: relative;
+
+    &_orientation_vertical &__checkbox {
+        display: block;
+    }
+
+    &_orientation_vertical &__checkbox + &__checkbox {
+        margin-top: 20px;
+    }
+}
+
+@media all and (320px <= width < 768px ) {
+    .kit-checkbox-group {
+        &_orientation_horizontal &__checkbox {
+            display: block;
+        }
+
+        &_orientation_horizontal &__checkbox + &__checkbox {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media all and (768px <= width < 1000px ) {
+    .kit-checkbox-group {
+        &_orientation_horizontal &__checkbox {
+            display: inline-block;
+        }
+
+        &_orientation_horizontal &__checkbox + &__checkbox {
+            margin-left: 30px;
+        }
+    }
+}
+
+@media all and (width >= 1000px ) {
+    .kit-checkbox-group {
+        &_orientation_horizontal &__checkbox {
+            display: inline-block;
+        }
+
+        &_orientation_horizontal &__checkbox + &__checkbox {
+            margin-left: 30px;
+        }
+    }
+}

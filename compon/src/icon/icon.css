@@ -1,0 +1,8 @@
+.kit-icon {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}

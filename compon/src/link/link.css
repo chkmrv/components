@@ -1,0 +1,56 @@
+.kit-link {
+    font-family: Arial;
+    display: inline-block;
+    cursor: pointer;
+
+    font-size: 14px;
+
+    text-decoration: none;
+
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+        text-decoration: none;
+    }
+
+    &:hover {
+        opacity: .8;
+    }
+
+    &__text {
+        vertical-align: bottom;
+        margin-bottom: -1px;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+    }
+
+    &_pseudo &__text {
+        border-bottom-style: dashed;
+    }
+
+    &_color_white {
+        color: $clean;
+    }
+
+    &_color_white &__text {
+        border-bottom-color: $clean;
+    }
+
+    &_color_black {
+        color: $base;
+    }
+
+    &_color_black &__text {
+        border-bottom-color: #7c7c7c;
+    }
+
+    &_disabled {
+        cursor: default;
+        color: #d5d5d5;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

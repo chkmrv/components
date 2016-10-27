@@ -1,0 +1,12 @@
+.kit-tab-group {
+    font-family: SeroPro;
+    display: inline-block;
+    position: relative;
+
+    margin-left: -5px;
+
+    &__tab {
+        display: inline-block;
+        margin-left: 5px;
+    }
+}

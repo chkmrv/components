@@ -1,0 +1,119 @@
+.demo-section {
+    color: $base;
+
+    & + & {
+        margin-top: 50px;
+    }
+
+    &__title {
+        padding-bottom: 10px;
+    }
+
+    &__title-text {
+        color: $clean;
+        display: inline-block;
+        font-size: 24px;
+    }
+
+    &__title-anchor {
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 14px;
+        vertical-align: bottom;
+    }
+
+    &__snippet {
+        position: relative;
+        color: $base;
+
+        pre {
+            border-top: 1px solid rgba(0, 0, 0, 0.3);
+            margin-bottom: 0px;
+            margin-top: 0px;
+            padding: 15px;
+        }
+    }
+
+    &__medias {
+        float: right;
+        margin-left: 25px;
+        padding-top: 6px;
+    }
+
+    &__medias-title {
+        margin-right: 10px;
+    }
+
+    &__media {
+        display: inline-block;
+
+        & + & {
+            margin-left: 10px;
+        }
+    }
+
+    &__media-text {
+        font-size: 18px;
+    }
+
+    &__toggle-link {
+        position: absolute;
+        right: 15px;
+        top: -15px;
+    }
+
+    &__snippet_hidden {
+        display: none;
+    }
+
+    &__content {
+        position: relative;
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+
+    &__example {
+        margin-top: 30px;
+        padding: 15px;
+        position: relative;
+    }
+
+    &__content::after {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-size: 12px;
+        font-weight: 700;
+        color: $base;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        content: 'Example';
+    }
+
+    &__description {
+        color: $clean;
+        font-size: 14px;
+        font-weight: 100;
+        padding-bottom: 10px;
+    }
+
+    &__snippet-select {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    &__link {
+        margin-left: 7px;
+    }
+
+    &__frame-body {
+        position: relative;
+        box-sizing: border-box;
+        padding: 10px;
+        border: 1px solid rgba(0, 0, 0, .3);
+    }
+}

@@ -1,0 +1,93 @@
+html, body, #app {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: radial-gradient(circle at -10% 20%, #1e4879, transparent 25%),
+                      radial-gradient(circle at 110% 55%, #3da3a8, transparent 65%),
+                      linear-gradient(to right, #1b2b52 35%, #1f2e54 100%);
+    background-attachment: fixed;
+    background-color: #1e4879;
+
+    font-family: SeroPro;
+}
+
+.demo {
+    color: $clean;
+    height: 100%;
+
+    &__layout {
+        box-sizing: border-box;
+
+        padding-top: 50px;
+        padding-bottom: 100px;
+        padding-left: 50px;
+
+        width: 1330px;
+        min-height: 100%;
+    }
+
+    &__sidebar {
+        box-sizing: border-box;
+        min-width: 200px;
+        list-style: none;
+        padding-left: 0px;
+        padding-right: 30px;
+    }
+
+    &__sidebar-item {
+        cursor: pointer;
+        padding: 15px;
+
+        & + & {
+            margin-top: 15px;
+        }
+
+        &:hover &-text {
+            opacity: .8;
+        }
+
+        &_selected,
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+
+        &_selected {
+            cursor: default;
+
+            .link {
+                cursor: default;
+            }
+        }
+
+        &_selected:hover &-text {
+            opacity: 1;
+        }
+    }
+
+    &__sidebar-item-text {
+        font-size: 20px;
+    }
+
+    &__content {
+        padding-top: 20px;
+        width: 1050px;
+    }
+
+    &__sidebar,
+    &__content {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    &__sidebar-item-text {
+        font-family: SeroPro;
+    }
+
+    &__message {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+}

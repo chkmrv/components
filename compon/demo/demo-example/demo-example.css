@@ -1,0 +1,31 @@
+.demo-example {
+    vertical-align: top;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    &_view_column {
+        display: inline-block;
+    }
+
+    &_view_row {
+        display: block;
+
+        .demo-example__header {
+            display: block;
+        }
+
+        .demo-example__content {
+            display: block;
+        }
+    }
+
+    &__header {
+        color: $base;
+        margin-bottom: 10px;
+    }
+
+    &__footer {
+        display: block;
+        color: $base;
+    }
+}
